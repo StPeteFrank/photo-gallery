@@ -8,13 +8,18 @@ import './App.css'
 // import sample from './sample.json'
 
 const categoryList = props => {
-  return <p>categoryList</p>
+  return <p>Category List</p>
 }
 const photoList = props => {
-  return <p>photoList</p>
+  return <p>Photo List</p>
 }
 const photoDetail = props => {
-  return <p>photoDetail</p>
+  return (
+    <p>
+      Photo Detail
+      <img src="https://cdn-images-1.medium.com/max/1600/1*i1vVm3EqqDIkyucD0079wg.jpeg" />
+    </p>
+  )
 }
 
 class App extends Component {
