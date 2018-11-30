@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import sample from './sample.json'
 
 class CategoryList extends Component {
   render() {

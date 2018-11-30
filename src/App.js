@@ -2,16 +2,27 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import logo from './logo.svg'
 import './App.css'
+// import CategoryList from './CategoryList'
+// import PhotoList from './PhotoList'
+// import PhotoDetail from './PhotoDetail'
+// import sample from './sample.json'
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
-          <header>
-            <h1>Photo Gallery</h1>
-          </header>
-        </div>
+        <main>
+          <div className="App">
+            <Link to="/categoryList">Category List </Link>
+            <Link to="/photoList"> Photo List </Link>
+            <Link to="/photoDetail"> Photo Detail </Link>
+
+            {/* <Route path="/" exact component={home} />
+          <Route path="/categoryList/" component={categoryList} />
+          <Route path="/photoList/" component={photoList} />
+          <Route path="/photoDetail/" component={photoDetail} /> */}
+          </div>
+        </main>
       </Router>
     )
   }
@@ -20,7 +31,13 @@ class App extends Component {
 export default App
 
 //To Do list
+//
+//
 
+//Questions:
+//Import json and use it to call images on needed components
+//Which component do I call json file?
+//Is my category list my home page?
 //
 
 //HOMEWORK INSTRUCTIONS
@@ -34,3 +51,6 @@ export default App
 //Navigating JSON data structures
 //Using the React Router library
 //Using parameters in React Router
+
+//NOTES:
+//Min 27 in lecture part 1 from thursday is where we add react-router
