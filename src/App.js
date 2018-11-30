@@ -7,6 +7,16 @@ import './App.css'
 // import PhotoDetail from './PhotoDetail'
 // import sample from './sample.json'
 
+const categoryList = props => {
+  return <p>categoryList</p>
+}
+const photoList = props => {
+  return <p>photoList</p>
+}
+const photoDetail = props => {
+  return <p>photoDetail</p>
+}
+
 class App extends Component {
   render() {
     return (
@@ -17,10 +27,10 @@ class App extends Component {
             <Link to="/photoList"> Photo List </Link>
             <Link to="/photoDetail"> Photo Detail </Link>
 
-            {/* <Route path="/" exact component={home} />
-          <Route path="/categoryList/" component={categoryList} />
-          <Route path="/photoList/" component={photoList} />
-          <Route path="/photoDetail/" component={photoDetail} /> */}
+            <Route path="/" exact component={categoryList} />
+            <Route path="/categoryList/" component={categoryList} />
+            <Route path="/photoList/" component={photoList} />
+            <Route path="/photoDetail/" component={photoDetail} />
           </div>
         </main>
       </Router>
@@ -31,14 +41,16 @@ class App extends Component {
 export default App
 
 //To Do list
-//
-//
+//Need a category list page(home page) that has two categories pandas and miniature painting on it
+//Click either category to be taken to photolist page
+//On photolist page click on a thumbnail photo to be taken to photo detail page
+//On photo detail page you can see an enlarged image and deatils about clicked photo
 
 //Questions:
 //Import json and use it to call images on needed components
-//Which component do I call json file?
+//Which component do I call which json file?
 //Is my category list my home page?
-//
+//When I un-comment my Routes I get error...
 
 //HOMEWORK INSTRUCTIONS
 
@@ -53,4 +65,5 @@ export default App
 //Using parameters in React Router
 
 //NOTES:
-//Min 27 in lecture part 1 from thursday is where we add react-router
+//Min 27 in lecture part 1 from W6D4 is where we add react-router
+//Min 35 W6D4 P1 we start to talk about actually using router
