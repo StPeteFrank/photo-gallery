@@ -13,5 +13,18 @@ code {
     monospace;
 }
 .photolist img {
-  width: 200px;
+  width: 60vw;
+  margin: 1vw;
+}
+a:link {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  border-style: inset;
+  border-color: rgb(185, 179, 179);
+  border-radius: 5px;
+
+  width: 63vw;
+  margin: 0 17vw 5vw 17vw;
 }
