@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 import samples from './samples.json'
 
@@ -9,7 +10,7 @@ class CategoryList extends Component {
         {Object.keys(samples).map(category => {
           return (
             <li key={category}>
-              <a href={`/${category}`}>{samples[category].title}</a>
+              <Link to={`/${category}`}>{samples[category].title}</Link>
             </li>
           )
         })}
