@@ -4,8 +4,10 @@ import samples from './samples.json'
 
 class PhotoDetail extends Component {
   render() {
-    const categoryData = samples['pandas']
-    const photoIndex = 0
+    const category = this.props.match.params.category
+    const photoIndex = this.props.match.params.index
+
+    const categoryData = samples[category]
 
     return (
       <div>
