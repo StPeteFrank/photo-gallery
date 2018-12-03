@@ -9,19 +9,19 @@ class PhotoList extends Component {
     const category = this.props.match.params.category
     const categoryData = samples[category]
     return (
-      <ul className="photolist">
+      <h4 className="photolist">
         {categoryData.photos.map((photo, index) => {
           return (
-            <li key={index}>
+            <p key={index}>
               <Link to={`/${category}/${index}`}>
-                <p>{photo.title}</p>
+                <h4>{photo.title}</h4>
 
                 <img src={photo.imageURL} />
               </Link>
-            </li>
+            </p>
           )
         })}
-      </ul>
+      </h4>
     )
   }
 }

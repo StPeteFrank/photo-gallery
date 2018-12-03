@@ -13,13 +13,22 @@ code {
     monospace;
 }
 .photolist img {
-  width: 60vw;
+  width: 45vw;
   margin: 1vw;
+}
+.photodetail img {
+  width: 95vw;
+}
+.photodetail {
+  text-align: center;
+  background-color: rgb(196, 192, 192);
+  border-style: inset;
+  border-radius: 5px;
 }
 a:link {
   text-decoration: none;
 }
-li {
+p {
   list-style: none;
   border-style: inset;
   border-color: rgb(185, 179, 179);
@@ -27,4 +36,13 @@ li {
 
   width: 63vw;
   margin: 0 17vw 5vw 17vw;
+}
+h1 {
+  text-align: center;
+}
+h4 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
 }

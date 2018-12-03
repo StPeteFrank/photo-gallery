@@ -6,15 +6,15 @@ import samples from './samples.json'
 class CategoryList extends Component {
   render() {
     return (
-      <ul>
+      <h3>
         {Object.keys(samples).map(category => {
           return (
-            <li key={category}>
+            <h3 key={category}>
               <Link to={`/${category}`}>{samples[category].title}</Link>
-            </li>
+            </h3>
           )
         })}
-      </ul>
+      </h3>
     )
   }
 }

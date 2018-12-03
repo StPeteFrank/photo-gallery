@@ -10,7 +10,7 @@ class PhotoDetail extends Component {
     const categoryData = samples[category]
 
     return (
-      <div>
+      <div className="photodetail">
         <h2>{categoryData.photos[photoIndex].title}</h2>
         <img src={categoryData.photos[photoIndex].imageURL} />
       </div>
