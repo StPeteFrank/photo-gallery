@@ -2,19 +2,22 @@ import React, { Component } from 'react'
 
 import samples from './samples.json'
 
+import { Link } from 'react-router-dom'
+
 class PhotoList extends Component {
   render() {
-    const categoryData = samples['pandas']
-
+    const category = this.props.match.params.category
+    const categoryData = samples[category]
     return (
       <ul className="photolist">
-        {categoryData.photos.map(photo => {
+        {categoryData.photos.map((photo, index) => {
           return (
-            <li>
+            <li key={index}>
               <p>{photo.title}</p>
-              <a href={photo.sourceURL}>
+
+              <Link to={`/${category}/${index}`}>
                 <img src={photo.imageURL} />
-              </a>
+              </Link>
             </li>
           )
         })}
