@@ -4,8 +4,6 @@ import samples from './samples.json'
 
 class CategoryList extends Component {
   render() {
-    console.log(samples)
-
     return (
       <ul>
         {Object.keys(samples).map(category => {
