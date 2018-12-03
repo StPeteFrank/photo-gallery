@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div>
         <h1>Photo Gallery</h1>
-        <PhotoDetail />
+        <CategoryList />
       </div>
     )
   }
