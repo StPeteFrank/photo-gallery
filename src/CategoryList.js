@@ -1,9 +1,17 @@
 import React, { Component } from 'react'
-import sample from './sample.json'
 
 class CategoryList extends Component {
   render() {
-    return <p>Category List</p>
+    return (
+      <ul>
+        <li>
+          <a href="/pandas">Panda Bears</a>
+        </li>
+        <li>
+          <a href="/miniatures">Miniatures</a>
+        </li>
+      </ul>
+    )
   }
 }
 

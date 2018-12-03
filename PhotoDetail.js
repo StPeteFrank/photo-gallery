@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
-import sample from './sample.json'
 
-class PhotoDetails extends Component {
+class PhotoDetail extends Component {
   render() {
-    return <p>Photo Details</p>
+    return <div />
   }
 }
 
-export default PhotoDetails
+export default PhotoDetail

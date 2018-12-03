@@ -1,44 +1,13 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import logo from './logo.svg'
-import './App.css'
-// import CategoryList from './CategoryList'
-// import PhotoList from './PhotoList'
-// import PhotoDetail from './PhotoDetail'
-// import sample from './sample.json'
-
-const categoryList = props => {
-  return <p>Category List</p>
-}
-const photoList = props => {
-  return <p>Photo List</p>
-}
-const photoDetail = props => {
-  return (
-    <p>
-      Photo Detail
-      <img src="https://cdn-images-1.medium.com/max/1600/1*i1vVm3EqqDIkyucD0079wg.jpeg" />
-    </p>
-  )
-}
+import CategoryList from './CategoryList'
 
 class App extends Component {
   render() {
     return (
-      <Router>
-        <main>
-          <div className="App">
-            <Link to="/categoryList">Category List </Link>
-            <Link to="/photoList"> Photo List </Link>
-            <Link to="/photoDetail"> Photo Detail </Link>
-
-            <Route path="/" exact component={categoryList} />
-            <Route path="/categoryList/" component={categoryList} />
-            <Route path="/photoList/" component={photoList} />
-            <Route path="/photoDetail/" component={photoDetail} />
-          </div>
-        </main>
-      </Router>
+      <div>
+        <h1>Photo Gallery</h1>
+        <CategoryList />
+      </div>
     )
   }
 }
@@ -49,13 +18,13 @@ export default App
 //Need a category list page(home page) that has two categories pandas and miniature painting on it
 //Click either category to be taken to photolist page
 //On photolist page click on a thumbnail photo to be taken to photo detail page
-//On photo detail page you can see an enlarged image and deatils about clicked photo
+//On photo detail page you can see an enlarged image and details about clicked photo
 
 //Questions:
 //Import json and use it to call images on needed components
 //Which component do I call which json file?
 //Is my category list my home page?
-//When I un-comment my Routes I get error...
+//How to use components in order to import them
 
 //HOMEWORK INSTRUCTIONS
 
