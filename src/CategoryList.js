@@ -6,7 +6,8 @@ import samples from './samples.json'
 class CategoryList extends Component {
   render() {
     return (
-      <h3>
+      <h3 class="categoryList">
+        <h1>Photo Gallery</h1>
         {Object.keys(samples).map(category => {
           return (
             <h3 key={category}>

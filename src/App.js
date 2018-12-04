@@ -13,7 +13,6 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <h1>Photo Gallery</h1>
           <Route exact path="/" component={CategoryList} />
           <Route exact path="/:category" component={PhotoList} />
           <Route path="/:category/:index" component={PhotoDetail} />

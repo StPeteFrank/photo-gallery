@@ -12,18 +12,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 .photolist img {
   width: 45vw;
   margin: 1vw;
+  background-color: rgb(196, 192, 192);
+}
+.photlist {
+  background-color: rgb(196, 192, 192);
 }
 .photodetail img {
   width: 95vw;
+  background-color: rgb(196, 192, 192);
 }
 .photodetail {
   text-align: center;
   background-color: rgb(196, 192, 192);
   border-style: inset;
-  border-radius: 5px;
+  border-radius: 7px;
+}
+.categoryList {
+  text-align: center;
+  background-color: rgb(196, 192, 192);
+  border-style: inset;
+  border-color: rgb(196, 192, 192);
+  border-radius: 7px;
+  width: 63vw;
+  margin: 5vw 17vw 5vw 17vw;
 }
 a:link {
   text-decoration: none;
@@ -31,11 +46,11 @@ a:link {
 p {
   list-style: none;
   border-style: inset;
-  border-color: rgb(185, 179, 179);
-  border-radius: 5px;
-
+  border-color: rgb(196, 192, 192);
+  border-radius: 7px;
   width: 63vw;
   margin: 0 17vw 5vw 17vw;
+  background-color: rgb(196, 192, 192);
 }
 h1 {
   text-align: center;
