@@ -6,6 +6,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  text-align: center;
+  background-image: linear-gradient(grey, orange);
+  background-repeat: no-repeat;
 }
 
 code {
@@ -16,10 +20,10 @@ code {
 .photolist img {
   width: 45vw;
   margin: 1vw;
-  background-color: rgb(196, 192, 192);
+  background-color: rgba(196, 192, 192, 0.5);
 }
 .photlist {
-  background-color: rgb(196, 192, 192);
+  background-color: rgba(196, 192, 192, 0.5);
 }
 .photodetail img {
   width: 95vw;
@@ -27,13 +31,13 @@ code {
 }
 .photodetail {
   text-align: center;
-  background-color: rgb(196, 192, 192);
+  background-color: rgba(196, 192, 192, 0.6);
   border-style: inset;
   border-radius: 7px;
 }
 .categoryList {
   text-align: center;
-  background-color: rgb(196, 192, 192);
+  background-color: rgba(196, 192, 192, 0.6);
   border-style: inset;
   border-color: rgb(196, 192, 192);
   border-radius: 7px;
@@ -50,7 +54,7 @@ p {
   border-radius: 7px;
   width: 63vw;
   margin: 0 17vw 5vw 17vw;
-  background-color: rgb(196, 192, 192);
+  background-color: rgba(196, 192, 192, 0.6);
 }
 h1 {
   text-align: center;
