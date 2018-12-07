@@ -1,7 +1,7 @@
 # Photo-Gallery
 
 <p align="center">
-<img src="src/PandaGalleryGIF">
+<img src="src/PandaGalleryGIF.gif">
 </p>
 
 ## Description
